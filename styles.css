@@ -1,0 +1,89 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #d1b518;
+color: #6316f1;
+line-height: 1.5;
+padding: 20px;
+}
+/* Container */
+.container {
+max-width: 1000px;
+margin: 0 auto;
+}
+/* Header */
+.header {
+background: #46c0f0;
+border: 2px solid #18d1c2;
+padding: 18px;
+margin-bottom: 18px;
+border-radius: 8px;
+text-align: center;
+}
+.header h1 { letter-spacing: 1px; font-size: 1.6rem; }
+.highlight { color: #18d1c2; font-weight: 600; }
+/* Main layout */
+.main-area {
+display: flex;
+gap: 20px;
+align-items: flex-start;
+}
+/* Content */
+.content {
+flex: 2;
+background: #1cc9ac;
+border: 1px solid #34989b;
+padding: 16px;
+border-radius: 6px;
+}
+/* Sidebar */
+.sidebar {
+flex: 1;
+background: #46dcf0;
+border: 1px solid #46c0f0;
+padding: 16px;
+border-radius: 6px;
+}
+/* Profile card */
+.profile-card {
+display: flex;
+gap: 16px;
+align-items: center;
+border: 2px dashed #d18d18;
+padding: 12px;
+margin-bottom: 14px;
+background: #d18d18;
+}
+.avatar {
+width: 96px;
+height: 96px;
+object-fit: cover;
+border-radius: 6px;
+border: 3px solid #6316f1;
+}
+/* Button */
+.contact-btn {
+margin-top: 8px;
+padding: 8px 12px;
+border: none;
+border-radius: 4px;
+background: #34989b;
+color: orange;
+cursor: pointer;
+}
+/* Footer */
+.footer {
+text-align: center;
+margin-top: 16px;
+padding: 10px;
+font-size: 0.9rem;
+color: #34989b;
+}
+/* Responsive layout */
+@media (max-width: 700px) {
+.main-area {
+flex-direction: column;
+}
+.avatar { width: 72px; height: 72px; }
+}
